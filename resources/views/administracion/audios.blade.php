@@ -23,8 +23,7 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Tipo</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="tipo">
-                    <option value="Ucumamayaya TV">Ucumamayaya TV</option>
-                    <option value="Panzaleito">Panzaleito</option>
+                    <option value="Kinkiyary">Kinkiyary</option>
                     </select>
                 </div>
 
@@ -67,8 +66,7 @@
                                 </td>
                                 <td>
                                     <select class="form-control" id="tipo{{ $vi->id }}" name="tipo">
-                                        <option value="Ucumamayaya TV" {{ $vi->tipo=='Ucumamayaya TV'?'selected':'' }} >Ucumamayaya TV</option>
-                                        <option value="Panzaleito" {{ $vi->tipo=='Panzaleito'?'selected':'' }} >Panzaleito</option>
+                                        <option value="Kinkiyary" {{ $vi->tipo=='Kinkiyary'?'selected':'' }} >Kinkiyary</option>
                                     </select>
                                 </td>
                                 <td>

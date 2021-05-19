@@ -36,6 +36,8 @@ Route::get('/pagina/{tipo}', 'Estaticas@arquitecturaReligiosa')->name('pagina');
 Route::get('/iglesia/{slug}', 'Estaticas@detalleIglesia')->name('detalleIglesia');
 
 Route::get('/videos/{tipo}', 'Videos@index')->name('videos');
+Route::get('/audios/{tipo}', 'Videos@audios')->name('audios');
+Route::get('/escuchar-audios/{tipo}', 'Videos@escucharAudios')->name('escucharAudios');
 
 
 // rutas que requieren autenticacion
