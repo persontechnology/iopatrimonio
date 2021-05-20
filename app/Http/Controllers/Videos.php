@@ -34,9 +34,9 @@ class Videos extends Controller
      
         $sonidos=[];
         foreach ($audios as $ax) {
-            for ($i=0; $i <30 ; $i++) { 
+            
                 array_push($sonidos,['title'=>$ax->titulo,'file'=>'','howl'=>null,'extension'=>url('/').Storage::url($ax->url)]);
-            }
+            
                 
             
         }
