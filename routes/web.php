@@ -11,6 +11,8 @@
 |
 */
 
+use App\Models\Iglesia;
+
 Route::get('/', function () {
     // Artisan::call('cache:clear');
     // Artisan::call('config:clear');
@@ -18,7 +20,8 @@ Route::get('/', function () {
     // Artisan::call('storage:link');
     // Artisan::call('key:generate');
     // Artisan::call('migrate');
-    return view('welcome');
+    $iglesias=Iglesia::latest()->get();
+    return view('welcome',['iglesias'=>$iglesias]);
 
 });
 
