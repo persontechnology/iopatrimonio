@@ -5,19 +5,30 @@
 <div class="container-fluid mt-3">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    {{ $iglesia->titulo }}
 
-                    
-                </div>
-                <div class="card-body" style="background-image: url({{ Storage::url($iglesia->foto_fondo) }}); background-position: center; background-repeat: no-repeat; background-size: cover;" >
+            <!-- Card -->
+                <div class="card card-image"
+                style="background-image: url({{ Storage::url($iglesia->foto_fondo) }});">
+
+                <!-- Content -->
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                <div>
                     {!! $iglesia->detalle !!}
                 </div>
-            </div>
+                </div>
+
+                </div>
+                <!-- Card -->
+
         </div>
         <div class="col-md-6">
-            <img src="{{ Storage::url($iglesia->foto_secundario) }}" alt="" class="img-fluid">
+
+            <!-- Card -->
+            <div class="card">
+                <!-- Card image -->
+                <img class="card-img-top" src="{{ Storage::url($iglesia->foto_secundario) }}" alt="Card image cap">
+            </div>
+            <!-- Card -->
         </div>
     </div>
 </div>
