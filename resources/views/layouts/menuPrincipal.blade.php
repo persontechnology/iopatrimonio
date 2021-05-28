@@ -95,10 +95,6 @@
         </ul>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="#">Más</a>
-    </li>
-
     @auth
     <li class="nav-item">
         <a class="nav-link" href="{{ route('administracion') }}">Administración</a>
