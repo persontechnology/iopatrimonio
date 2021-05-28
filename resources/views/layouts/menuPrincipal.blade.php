@@ -24,9 +24,6 @@
               <li><a class="dropdown-item" href="{{ route('pagina','Monumentos') }}">Monumentos</a></li>
 
               
-              <li><a class="dropdown-item" href="#">Más</a></li>
-              
-              
 
               {{--  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
                 <ul class="dropdown-menu">
