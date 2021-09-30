@@ -7,18 +7,24 @@
         <div class="col-md-6">
 
             <!-- Card -->
-                <div class="card card-image"
-                style="background-image: url({{ Storage::url($iglesia->foto_fondo) }});">
+            <div class="card card-image"
+            style="background-image: url({{ Storage::url($iglesia->foto_fondo) }}); background-position: center;  background-repeat: no-repeat; background-size: cover;">
 
-                <!-- Content -->
-                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+            <!-- Content -->
+            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
                 <div>
+                
+                <p>
                     {!! $iglesia->detalle !!}
+                </p>
+                
                 </div>
-                </div>
+            </div>
 
-                </div>
-                <!-- Card -->
+            </div>
+            <!-- Card -->
+
+           
 
         </div>
         <div class="col-md-6">
